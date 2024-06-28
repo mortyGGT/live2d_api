@@ -5,10 +5,10 @@ FROM php:5.6-apache
 RUN docker-php-ext-install json
 
 # 将项目文件复制到容器中
-COPY . /CDN/LIVE2D/
+COPY . /CDN/live2d_api/
 
 # 设置工作目录
-WORKDIR /CDN/LIVE2D/
+WORKDIR /CDN/live2d_api/
 
 # 暴露端口
 EXPOSE 80
